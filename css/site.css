@@ -1,8 +1,13 @@
+/* font-family: 'Roboto', sans-serif; */
+
 :root {
     --cf-dark: #212121;
     --cf-light: #ebebeb;
     --cf-darkblue: #00223d;
     --cf-highlight: #fae100;
+
+    --jg-body-font:'Roboto', sans-serif; 
+
 }
 
 
@@ -14,9 +19,28 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_1920.png");
+    background-image: url("/img/LandingPage_576.png");
+    background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
+    background-color: var(--cf-darkblue);
+    font-family: var(--jg-body-font);
+}
+
+.logo {
+    height: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+
+}
+
+p {
+    font-weight: lighter;
 }
 
 .content {
@@ -25,4 +49,62 @@ body {
 
 .footer {
     flex-shrink: 0;
+}
+
+
+@media (min-width: 576px) {
+    body {
+        background-image: url(/img/LandingPage_768.png);
+        display: flex;
+        flex-direction: column;
+        background-size: contain;
+        background-position: top right;
+        
+    }
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-image: url(/img/LandingPage_992.png);
+        background-size: contain;
+        background-position: top right;
+
+    }
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+    }
+
+
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-image: url(/img/LandingPage_1200.png);
+    }
+ 
+}
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-image: url(/img/LandingPage_1400.png);
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        background-image: url(/img/LandingPage_1920.png);
+    }
 }
