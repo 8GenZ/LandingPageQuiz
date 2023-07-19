@@ -136,6 +136,7 @@ p {
 @media (min-width: 992px) {
     body {
         background-image: url(/img/LandingPage_1200.png);
+        background-size: cover;
     }
 
     h1 {
