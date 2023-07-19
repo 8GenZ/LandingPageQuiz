@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     background-image: url("/img/LandingPage_576.png");
     background-size: cover;
-    background-position: top right;
+    background-position: top center;
     background-repeat: no-repeat;
     background-color: var(--cf-darkblue);
     font-family: var(--jg-body-font);
@@ -33,12 +33,14 @@ body {
 h1 {
     font-family: var(--jg-heading-font);
     font-size: 3rem;
+    line-height: 2.5rem;
 }
 
 p1 {
     font-family: var(--jg-paragraph-font);
     font-weight: 200;
     font-size: 1rem;
+    font-weight: lighter;
 }
 
 .logo {
@@ -51,10 +53,6 @@ p1 {
     align-items: flex-end;
     height: 100%;
 
-}
-
-p {
-    font-weight: lighter;
 }
 
 .content {
@@ -77,23 +75,23 @@ p {
     }
 
     .container {
-        display: flex;
-        justify-content: start;
-        align-items: center;
         height: 100%;
+        padding-bottom: 2rem;
+
     }
 
     h1 {
         font-family: var(--jg-heading-font);
-        font-size: 2rem;
+        font-size: 3.5rem;
         width: 100%;
+        line-height: 3rem;
     }
 
     p1 {
         width: 100%;
         font-family: var(--jg-paragraph-font);
         font-weight: 200;
-        font-size: .85rem;
+        font-size: 1.5rem;
         
         
     }
@@ -113,6 +111,7 @@ p {
         justify-content: start;
         align-items: center;
         height: 100%;
+       
     }
     h1 {
         font-family: var(--jg-heading-font);
@@ -125,8 +124,6 @@ p {
         font-family: var(--jg-paragraph-font);
         font-weight: 200;
         font-size: 1.3rem;
-        
-        
     }
 
 }
@@ -136,7 +133,7 @@ p {
 @media (min-width: 992px) {
     body {
         background-image: url(/img/LandingPage_1200.png);
-        background-size: cover;
+        background-size: contain;
     }
 
     h1 {
@@ -159,7 +156,7 @@ p {
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     body {
-        background-image: url(/img/LandingPage_1400.png);
+         background-image: url(/img/LandingPage_1400.png); 
     }
 }
 
